@@ -24,14 +24,14 @@ const mapStateToProps = state => ({
   planetInfo: state.planetInfo
 });
 
-//option 2
-// function mapDispatchToProps(dispatch) {
-//   return bindActionCreators(
-//     {
-//       getPlanet
-//     },
-//     dispatch
-//   );
-// }
 
-export default connect(mapStateToProps, { getPlanet })(Planets);
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(
+    {
+      getPlanet
+    },
+    dispatch
+  );
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Planets);
