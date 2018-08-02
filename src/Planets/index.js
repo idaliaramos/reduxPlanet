@@ -12,10 +12,10 @@ class Planets extends Component {
   };
   render() {
     console.warn(this.props, "prps");
+
     return (
       <div>
         <button onClick={this.retrivePlanets}>Click to get Planet</button>
-        {this.props.planetInfo ? this.props.planetInfo.map(planet => <li> {planet}</li>): ''}
       </div>
     );
   }
