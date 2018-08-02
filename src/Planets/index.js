@@ -24,7 +24,6 @@ const mapStateToProps = state => ({
   planetInfo: state.planetInfo
 });
 
-
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     {
