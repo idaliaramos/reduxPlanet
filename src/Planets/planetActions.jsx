@@ -16,7 +16,7 @@ const getPlanet = () => {
     //   })
     // )
   };
-}
+};
 //many other functions
 
 export { getPlanet };
